@@ -1,0 +1,10 @@
+{
+    "haskell.hlintOn": true,
+    "haskell.hlint.executablePath": "/home/dev/.local/bin/hlint",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.profiles.linux": {
+        "zsh": {
+            "path": "/usr/bin/zsh"
+        }
+    }
+}

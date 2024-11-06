@@ -49,7 +49,7 @@ instance Applicative ExactlyOne where
     -> ExactlyOne a
   pure =
     error "todo: Course.Applicative pure#instance ExactlyOne"
-  (<*>) :: 
+  (<*>) ::
     ExactlyOne (a -> b)
     -> ExactlyOne a
     -> ExactlyOne b
@@ -121,13 +121,13 @@ instance Applicative Optional where
 instance Applicative ((->) t) where
   pure ::
     a
-    -> ((->) t a)
+    -> (->) t a
   pure =
     error "todo: Course.Applicative pure#((->) t)"
   (<*>) ::
-    ((->) t (a -> b))
-    -> ((->) t a)
-    -> ((->) t b)
+    (->) t (a -> b)
+    -> (->) t a
+    -> (->) t b
   (<*>) =
     error "todo: Course.Apply (<*>)#instance ((->) t)"
 
